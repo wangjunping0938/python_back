@@ -29,8 +29,24 @@ anaconda安装
 
 # 模块的导入
 import cgi
-# 使用模块的方法
 cgi.closelog()
+
+import numpy
+arr = numpy.array([1, 2, 3])
+print(arr)
+
+# 使用模块的方法
 from cgi import closelog
 closelog()
+
+from numpy import array
+arr1 = array([2, 3, 4])
+print(arr1)
+
+# 将模块中的所有方法导入
+from numpy import *
+arr2 = array([3, 3, 3])
+ones1 = ones([1, 2])
+print(arr2)
+print(ones1)
 

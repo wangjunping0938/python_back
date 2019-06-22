@@ -4,6 +4,9 @@
 # 输出
 print('Hello Python')
 
+# 输入
+word = input('请输入一个词语:')
+print('输入字符: %s' %word)
 
 # 注释
 """注释

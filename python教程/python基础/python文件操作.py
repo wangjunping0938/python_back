@@ -30,3 +30,18 @@ data = '测试内容1\n'
 fh = open('文本1.txt', 'a+')
 fh.write(data)
 fh.close()
+
+
+# 文件复制
+import shutil
+
+souce_path = 'xlsx/merge.xls'
+destination_path = '/tmp/merge.xls'
+
+shutil.copy(souce_path, destination_path)
+
+# 文件删除,重命名
+import os
+shutil.copy('xlsx/merge.xls', 'merge1.xls')
+os.rename('merge1.xls', 'merge2.xls')
+os.remove('merge2.xls')
